@@ -1,0 +1,16 @@
+streamlit
+torch
+torchvision
+open_clip_torch
+ultralytics
+easyocr
+Pillow
+numpy
+python-dotenv
+transformers[torch]
+timm
+scikit-learn
+opencv-python-headless
+kornia
+opencv-python-headless
+thop
