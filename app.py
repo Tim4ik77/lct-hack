@@ -4,6 +4,14 @@ import os, io, zipfile, cv2, torch, tempfile, json, re
 from datetime import datetime
 from inspector import UniversalInstrumentInspector
 from cluster_manager import add_new_cluster_from_zip
+import gdown
+
+folder_url = 'https://drive.google.com/drive/folders/1xhQzoaLMrTY6b-NtXxezjuXlOSb31j7S?usp=sharing'
+output_folder = './models/'
+
+print("Скачивание папки с весами...")
+gdown.download_folder(folder_url, output=output_folder, quiet=False)
+print(f"Папка успешно загружена: {output_folder}")
 
 # --- КОНФИГУРАЦИЯ ---
 YOLO_WEIGHTS_PATH = 'models/best_medium.pt'
